@@ -95,4 +95,10 @@ $(".press").mouseover(function(){
 	
 })
 
-//
+//footer 官方微博 显示二维码
+$(".official-wb-word").mouseover(function(){
+	$(".wb-code").css({"display":"block"})
+})
+$(".official-wb-word").mouseout(function(){
+	$(".wb-code").css({"display":"none"})
+})

@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{
 .clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
 .clearfix{zoom:1;}
 
-.header0,.top0,.nav-mian,.category0{width:1080px;margin:0 auto}
+.header0,.top0,.nav-mian,.category0,.footer0{width:1080px;margin:0 auto}
 /*header*/
 #header{
 	height:30px;
@@ -279,13 +279,111 @@ h1,h2,h3,h4,h5,h6{
 .nav-mian .nav-list .list-con{
 	margin-top:21px;
 }
-.nav-mian .nav-list .list-con li{
+.nav-mian .nav-list .list-con .list-main{
 	padding:13px 0 13px 29px;
 	height:14px;
 }
 .nav-mian .nav-list .list-con .list-main:hover{
-	background:gray;
-	opacity: 0.9;
+	background:grey;
+}
+.nav-mian .nav-list .list-con .list-main{
+	position:relative;
+}
+.nav-mian .nav-list .list-con .list-main .list-con1{
+	width:700px;
+	min-height:360px;
+	position:absolute;
+	top:-21px;
+	left:200px;
+	background: #fff;
+	padding:15px 0;
+	display: none;
+}
+.nav-mian .nav-list .list-con .list-main:hover .list-con1{
+	display: block;
+}
+
+.list-main .list-con1 .list-con1-son{
+	width:700px;
+	height:52px;
+}
+.list-main .list-con1 .list-con1-son .son-link{
+	display: inline-block;
+	height:20px;
+	line-height:20px;
+	font-size: 14px;
+	color:#333;
+	vertical-align: middle;
+	margin:16px 0 0 15px;
+	float:left;
+}
+.list-main .list-con1 li:nth-child(2) .son-link{
+	margin-top:33px;
+}
+.list-main .list-con1 li:nth-child(4) .son-link{
+	margin-top:33px;
+}
+.list-main .list-con1 li:nth-child(6) .son-link{
+	margin:16px 0 0 43px;
+}
+.list-main .list-con1 .list-con1-son i{
+	display: inline-block;
+	height:20px;
+	line-height:20px;
+	font-size: 14px;
+	color:#333;
+	vertical-align: middle;
+	margin:16px 0 0 6px;
+	float:left;
+}
+.list-main .list-con1 .list-con1-son div{
+	width:564px;
+	height:51px;
+	float:right;
+	margin-right:25px;
+	border-bottom:1px solid #f2f2f2;
+}
+.list-main .list-con1 .list-con1-son div li{
+	float:left;
+	margin:13px 20px 0 0;
+}
+.list-main .list-con1 .list-con1-son div li a{
+	font-size:12px;
+	color:#333;
+	text-align:center;
+}
+
+.list-main .list-con1 .list-con1-son #box2{
+	width:564px;
+	height:86px;
+	float:right;
+	margin-right:25px;
+	border-bottom:1px solid #f2f2f2;
+}
+.list-main .list-con1 .list-con1-son #box2 li{
+	float:left;
+	margin:13px 20px 0 0;
+}
+.list-main .list-con1 .list-con1-son #box2 li a{
+	font-size:12px;
+	color:#333;
+	text-align:center;
+}
+
+.list-main .list-con1 li:nth-child(2) i{
+	margin-top:33px;
+}
+.list-main .list-con1 li:nth-child(4) i{
+	margin-top:33px;
+}
+
+.list-main .list-con1 #list-con1-son-2{
+	width:700px;
+	height:86px;
+}
+.list-main .list-con1 #list-con1-son-4{
+	width:700px;
+	height:86px;
 }
 .nav-mian .nav-list .list-con li p{
 	font-size: 14px;
@@ -299,9 +397,8 @@ h1,h2,h3,h4,h5,h6{
 .nav-mian .nav-list .list-con li p a:hover{
 	color:#f7b200;
 }
-.nav-mian .nav-list .list-con li ul{
-	
-} 
+ 
+
 
 /*nav-article*/
 .nav-article{
@@ -425,11 +522,11 @@ h1,h2,h3,h4,h5,h6{
 
 /*category模块部分*/
 #category{
-	height:12788px;
+	height:4400px;
 	background:#f9f9f9;
 }
 .category0{
-	height:12788px;
+	height:4400px;
 	background:#f9f9f9;;
 }
 .category-recommend-2 img{
@@ -539,7 +636,12 @@ h1,h2,h3,h4,h5,h6{
 .category-recommend-3 ul li img{
 	width:100%;
 	height:100%;
+	transition: transform 0.5s ease-in-out 0s;
 }
+.category-recommend-3 ul li a:hover img{
+    transform: scale3d(1.03,1.03,1);
+}
+
 .category-recommend-3 ul li span{
 	float:left;
 	display:block;
@@ -576,10 +678,10 @@ h1,h2,h3,h4,h5,h6{
 	height:284px;
 	
 }
-.category-recommend-3 ul .L a:hover{
+/*.category-recommend-3 ul .L a:hover{
 	box-shadow: 1px 2px 10px 4px rgba(0,0,0,.05);
 	transition: box-shadow 0.2s ease-in-out 0s;
-}
+}*/
 
 
 .category-recommend-4{
@@ -647,7 +749,12 @@ h1,h2,h3,h4,h5,h6{
 .category-recommend-4 ul li img{
 	width:100%;
 	height:100%;
+	transition:transform 0.5s ease-in-out 0s;
 }
+.category-recommend-4 ul li a:hover img{
+    transform: scale3d(1.03,1.03,1);
+}
+
 .category-recommend-4 ul li span{
 	float:left;
 	display:block;
@@ -693,4 +800,163 @@ h1,h2,h3,h4,h5,h6{
 }
 .category-recommend-4 ul #same{
 	margin-top:14px;
+}
+
+
+/*footer*/
+#footer{
+	height:439px;
+	background:#fff;
+}
+.footer0{
+	height:439px;
+	background:#fff;
+}
+.footer0 .up{
+	width:1080px;
+	height:120px;
+	border-bottom:1px solid #ccc;
+}
+.footer0 .up li{
+	float:left;
+	width:270px;
+	height:120px;
+}
+.footer0 .up img{
+	display: block;
+	float:left;
+	margin:20px 0 0 34px;
+}
+.footer0 .up p{
+	float:left;
+	height: 14px;
+	line-height:14px;
+	color:black;
+	margin:53px 0 0 23px;
+}
+
+.footer0 .and{
+	width:1080px;
+	height:141px;
+
+	margin-top:30px;
+}
+.and .con{
+	float:left;
+}
+.footer0 .and .con{
+	width:777px;
+	height:141px;
+
+	border-right:1px solid #ccc;
+	margin-left:50px;
+}
+.footer0 .and .con .con-list{
+	float:left;
+	width:184px;
+	height:141px;
+}
+
+.and .con .con-list h2{
+	height:16px;
+	font-size: 16px;
+	line-height:16px;
+	color:#333;
+}
+.and .con .con-list .con-list1{
+	width:184px;
+	height:84px;
+	margin-top:35px;
+}
+.and .con .con-list .con-list1 li{
+	margin-bottom: 14px;
+	font-size:12px;
+	height:12px;
+	line-height:12px;
+}
+.and .con .con-list .con-list1 .official-wb{
+	position:relative;
+}
+.and .con .con-list .con-list1 .official-wb .wb-code{
+	width:114px;
+	height:114px;
+	position:absolute;
+	top:-47px;
+	left:58px;
+	border-radius:4px;
+	box-shadow: 0 1px 10px 4px rgba(0,0,0,.05);
+	display:none;	
+}
+.official-wb .wb-code span{
+	display:block;
+	width:114px;
+	height:114px;
+	border-radius:4px;
+	background:url(../img/wxCode.jpg) no-repeat;
+	background-size:100% 100% ;
+}
+.official-wb .wb-code i{
+	width:15px;
+	height:30px;
+	position: absolute;
+	top:34%;
+	left:-15px;
+	background: url(../img/left-triangle.png);
+}
+.con .con-list .con-list1 li a{
+	color:#808080;
+}
+.con .con-list .con-list1 li a:hover{
+	color:#513569;
+}
+.and .con .con-list img{
+	width:99px;
+	height:99px;
+	margin-top:20px;
+}
+
+.and .email{
+	width:252px;
+	height:141px;
+	float:left;
+}
+.and .email .email-Ch{
+	height:16px;
+	line-height:16px;
+	font-size:16px;
+	color:#333;
+	text-align: center;
+	margin-top:4px;
+}
+
+.and .email .email-En{
+	height:14px;
+	line-height:14px;
+	font-size:14px;
+	color:#808080;
+	text-align: center;
+	margin-top:35px;
+}
+
+.down{
+	width:1080px;
+	height:84px;
+	margin-top:63px;
+}
+.down p{
+	height:12px;
+	line-height: 12px;
+	text-align: center;
+	color:#808080;
+	font-size:12px;
+	margin-bottom:15px;
+}
+.down .down-p1 span{
+	margin-left:24px;
+}
+.down .down-p1 span:nth-child(3) a{
+	color:#808080;
+}
+.down .down-p2 span{
+	margin-left:24px;
 }
