@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="../public.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
-		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
 		<script src="../jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
 		<script src="../cookie.js"></script>
-		
 	</head>
 	<body>
 		<!--header-->
@@ -17,8 +16,8 @@
 				<h1><a href=""><img src="../img/logo.png"/></a></h1>
 				<div id="box">					
 					<p class="L">欢迎来到必要，请</p>
-					<p class="M"><a href="login.html">登录</a></p>
-					<p class="R">注册</p>
+					<p class="M">登录</p>
+					<p class="R"><a href="register.html">注册</a></p>
 				</div>
 			</div>
 		</div>
@@ -26,37 +25,34 @@
 		<!--main-->
 		<div id="main">
 			<div class="main0">
-				<div id="register-box">
+				<div id="login-box">
 					<h2>
 						<i class="iconfont icon-yonghu"></i>
-						<p>新用户注册</p>
+						<p>用户登录</p>
 					</h2>
-					<form action="" method="post">						
+					<form action="" method="post">
 						<input type="text" placeholder="请输入手机号" id="userName" class="text-same"/>
-						<span id="userName-cue" class="span-same"></span>
+						<span id="userName-cue" class="span-same">胜多负少</span>
 						
 						
-						<input type="text" placeholder="请输入短信验证码" id="phonecode" />
-						<input type="button" name="" id="phonecode-btn" value="获取验证码" />
-						<span id="phonecode-cue" class="span-same"></span>
 						
+						<input type="text" name="" id="pwd" class="text-same" placeholder="请输入登录密码" />
+						<span id="pwd-cue" class="span-same">十分看好</span>
 						
-						<input type="text" name="" id="pwd" class="text-same" placeholder="请输入6-32位登录密码" />
-						<span id="pwd-cue" class="span-same"></span>
-						
-						
-						<input type="text" name="" id="pwd-again" class="text-same" placeholder="请再次输入登录密码" />
-						<span id="pwd-again-cue" class="span-same"></span>
-						
-						
-						<div id="regist-agree">
-							<div class="agree-box">
+						<div id="login-auto">
+							<div class="auto-box">
 								<b class=""></b>
-								我已阅读并同意							
+								<p>下次自动登录</p>							
 							</div>
-							<a href="">《必要服务协议》</a>
+							<a href="">忘记密码</a>
 						</div>
-						<input type="submit" name="account-btn" id="accountBtn" value="注册" />
+						
+						<input type="submit" name="account-btn" id="loginBtn" value="登录" />
+						<div id="other-loginmode">
+							<span id="mode-suggesrt">使用第三方账号登录：</span>
+							<a href="" id="mode-same" class="modewx"></a>
+							<a href="" id="mode-same" class="modeqq"></a>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -143,4 +139,4 @@
 	</body>
 </html>
 <script src="index.js"></script>
-<script src="register.js"></script>
+<script src="login.js"></script>

@@ -32,32 +32,32 @@
 	line-height: 12px;
 	height:12px;
 }
-.M a{
+.R a{
 	color:#8c8292;
-	border-right:1px solid #8c8292;
-	padding-right:6px;
+	border-left:1px solid #8c8292;
+	padding-left:6px;
 }
 
 /*main*/
 #main{
-	height:673px;
+	height:640px;
 	background:#f9f9f9;
 }
 .main0{
-	height:673px;
+	height:640px;
 	width:1080px;
 	background:#f9f9f9;
 	margin:0 auto;
 }
-.main0 #register-box{
+#login-box{
 	width:402px;
-	height:424px;
+	height:346px;
 	background:#f9f9f9;
 	margin:0 auto;
-	padding-top:54px;
-	position:relative;
+	padding-top:55px;
+	position: relative;
 }
-#register-box i{
+#login-box i{
 	display:block;
 	font-size:28px;
 	color:#b768a5;
@@ -65,7 +65,7 @@
 	margin:-4px 12px 0 0;
 	text-align: center;
 }
-#register-box p{
+#login-box p{
 	font-size:20px;
 	color:#523669;
 	float:left;
@@ -74,30 +74,16 @@
 	width:388px;
 	height:41px;
 	border:1px solid #e8e8e8;
-	margin-top:25px;
+	margin-top:20px;
 	color:#999;
 	font-size:14px;
 	background:#fff;
 	padding-left:12px;
 	cursor: pointer;
 }
-/*#userName-cue{
-	width:388px;
-	height:40px;
-	position:absolute;
-	left:402px;
-	line-height:40px;
-	color:#f49f26;
-	font-size: 14px;
-	padding-left:12px;
-
-}*/
-#userName-cue{
-	top:108px;
-}
 .span-same{
 	/*top:170px;*/
-	width:388px;
+	width:300px;
 	height:40px;
 	position:absolute;
 	left:402px;
@@ -107,55 +93,34 @@
 	padding-left:12px;
 	display:block;
 }
-#phonecode-cue{
-	top:170px
+#userName-cue{
+	top:105px;
 }
 #pwd-cue{
-	top:238px;
-}
-#pwd-again-cue{
-	top:306px;
-}
-#phonecode{
-	width:228px;
-	height:39px;
-	border:1px solid #e8e8e8;
-	color:#999;
-	font-size:14px;
-	background:#fff;
-	padding-left:12px;
-	margin-top:20px;
-	cursor: pointer;
-}
-#phonecode-btn{
-	width:140px;
-	height:40px;
-	background:#724a88;
-	font-size:14px;
-	color:#fff;
-	border:0;
-	margin-left:15px;
-	outline:none;
-	cursor: pointer;
+	top:167px;
 }
 
-#regist-agree{
+#login-auto{
 	width:400px;
 	height:16px;
 	background: #f9f9f9;
 	margin-top:20px;
 }
-#regist-agree div{
-	width:113px;
+#login-auto div{
+	width:200px;
+	height:16px;
+	float:left;
+	cursor: pointer;
+}
+#login-auto p{
 	height:16px;
 	font-size: 12px;
 	color:#8a8a8a;
 	line-height:16px;
 	float:left;
-	cursor: pointer;
 }
 
-#regist-agree b{
+#login-auto b{
 	float:left;
 	display: inline-block;
     width: 15px;
@@ -164,22 +129,22 @@
     vertical-align: bottom;
     background: url(../img/commonSprite.png) no-repeat 0 -80px;
 }
-#regist-agree .regist-yes {
-	background: url(../img/commonSprite.png) no-repeat -20px -80px;
+#login-auto .login-remember{
+	background: url(../img/commonSprite-1.png) no-repeat -20px -80px;
 }
 	
-#regist-agree a{
+#login-auto a{
 	display:block;
 	float:left;
-	margin-left:15px;
-	width:96px;
+	margin-left:152px;
+	width:48px;
 	height:16px;
 	line-height:16px;
 	font-size:12px;
 	color:#07a6df;
 	cursor: pointer;
 }
-#accountBtn{
+#loginBtn{
 	width:400px;
 	height:50px;
 	background:#f49f26;
@@ -191,4 +156,34 @@
 	margin-top:33px;
 	outline:none;
 	cursor: pointer;
+}
+
+#other-loginmode{
+	width:402px;
+	height:32px;
+	margin-top: 40px;
+}
+#mode-suggesrt{
+	display: block;
+	width:140px;
+	height:32px;
+	font-size:14px;
+	color:#666;
+	line-height:32px;
+	float:left;
+	margin-left:16px;
+}
+#mode-same{
+	display: block;
+	width:98px;
+	height:30px;
+	float:left;
+	border:1px solid #cdcdcd;
+	margin-left:14px;
+}
+.modewx{
+	background:url(../img/weix.jpg);
+}
+.modeqq{
+	background:url(../img/qq.jpg);
 }
