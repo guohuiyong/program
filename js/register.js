@@ -35,9 +35,7 @@ $("#userName").blur(function(){
 		$("#userName-cue").html("✔");
 		flagName = true;
 	}
-	if(str == "请输入手机号"){
-		$("#userName-cue").html("");
-	}
+	
 })
 
 //验证码
