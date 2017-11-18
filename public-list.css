@@ -266,7 +266,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #list-classify .classify-link{
 	display:block;
-	width:100px;
+/*	width:100px;*/
 	height:50px;
 	font-size:16px;
 	color:#808080;
@@ -277,6 +277,7 @@ h1,h2,h3,h4,h5,h6{
 #list-info{
 	float:left;
 	width:1080px;
+	/*min-height:500px;*/
 	background: greenyellow;
 }
 #list-info .list-info-title{
@@ -296,12 +297,18 @@ h1,h2,h3,h4,h5,h6{
 	float:left;
 	margin-right:20px;
 	margin-bottom:20px;
-	background:darkcyan;
+
 }
 .shop-list > li >a{
 	display: block;
 	width:255px;
 	height:335px;
+	overflow: hidden;
+	background:#fff;
+}
+.shop-list > li > a:hover{
+	box-shadow: 1px 2px 10px 4px rgba(0,0,0,.05);
+	transition: box-shadow 0.2s ease-in-out 0s;
 }
 .shop-list > li > a > img{
 	width:255px;
@@ -313,7 +320,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .shop-list > li > a > p{
-	width:204px;
+	width:255px;
 	height:16px;
 	font-size:16px;
 	line-height:16px;
@@ -335,10 +342,13 @@ h1,h2,h3,h4,h5,h6{
 #footer{
 	height:439px;
 	background:#fff;
+	
 }
 .footer0{
 	height:439px;
 	background:#fff;
+	float:left;
+	margin:60px 0 0 92px;
 }
 .footer0 .up{
 	width:1080px;
@@ -471,7 +481,7 @@ h1,h2,h3,h4,h5,h6{
 	height:84px;
 	margin-top:63px;
 }
-.down p{
+.down .down-p{
 	height:12px;
 	line-height: 12px;
 	text-align: center;
