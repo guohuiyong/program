@@ -81,8 +81,14 @@ $(".rightBar-code").mouseout(function(){
 	$(".code-box").css({"display":"none"})
 })
 //滚动条
+$(window).scroll(function(){
+	$(".rightBar-top").css({"display":"block"});
+	if( $(document).scrollTop() == 0){
+		$(".rightBar-top").css({"display":"none"});
+	}
+})
 $(".rightBar-top").click(function(){
-	$("html,body").animate({scrollTop:0},200)
+	$("html,body").animate({scrollTop:0},200);
 })
 
 

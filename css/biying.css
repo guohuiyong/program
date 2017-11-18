@@ -98,13 +98,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .header-user li:nth-child(3) div{
 	width:150px;
-	height:254px;
+	height:228px;
 	position:absolute;
 	/*background:#fff;*/
-	top:25px;
+	top:40px;
 	left:818px;
 	display:none;
-	/*box-shadow: 0 1px 10px 4px rgba(0,0,0,.05);*/
+	box-shadow: 0 1px 10px 4px rgba(0,0,0,.05);
 }
 .header-user li:nth-child(3) div i{
 	width:30px;
@@ -114,11 +114,14 @@ h1,h2,h3,h4,h5,h6{
 	display: block;
 	margin:0 auto;
 	background-size: 100% 100%;
+	position: absolute;
+	top:-15px;
+	left:60px;
 }
 .header-user li:nth-child(3) div dl{
 	width:150px;
 	height:220px;
-	margin:15px 10px 10px 10px;
+	margin:10px 1px 10px 0;
 	background:#fff;
 	border-radius:4px;
 }
@@ -163,7 +166,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .top0{
 	height:98px;
-	background:#fff;
+	background:#fff;	
 }
 .top0 h1{
 	float:left;
@@ -176,11 +179,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .top0 input:nth-of-type(2){
 	display: inline-block;
-	width:308px;
+	width:275px;
 	height:38px;
 	border-radius:4px 0 0 4px;
 	font-size:16px;
 	color:#ccc;
+	padding-left:14px;
+	outline: none;
 }
 .top0 input:nth-of-type(1){
 	width:39px;
@@ -190,8 +195,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .top0 i:nth-of-type(1){
 	position:absolute;
-	top:68px;
-	left:1154px;
+	top:67px;
+	left:1144px;
 	margin:1px 0 0 -4px;
 	font-size: 24px;
 	color:#808080;
@@ -514,7 +519,7 @@ h1,h2,h3,h4,h5,h6{
 	width: 48px;
 	height:48px;
 	background: url(../img/rightBar-top.png) no-repeat;
-	display: block;
+	display: none;
 }
 .rightBar-top:hover{
 	background: url(../img/rightBar-topActive.png) no-repeat;

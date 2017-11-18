@@ -21,6 +21,7 @@ $("#loginBtn").click(function(){
 		var info = arr[i];//info={uname: "15201031159", pwodr: "ghy123@"}
 		if(info.uname == $("#userName").val() && info.pwodr == $("#pwd").val()){
 			location.href="index.html";
+			console.log("111")
 		}else{
 			alert("登录失败");
 		}
