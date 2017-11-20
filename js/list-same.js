@@ -42,8 +42,8 @@ window.onload=function(){
 						title=`<p class="list-info-title">${json[attr].name}</p>`
 						conStr += `
 						<li>
-							<a href="page.hmtl?pid=${product.id}&cname=${attr}">
-								<img src="../img2/${product.src}" alt="" />
+							<a href="http://127.0.0.1/program/js/page.html?pid=${product.id}&cname=${attr}">
+								<img src="../img2/${product.src[0]}" alt="" />
 								<p class="name">${product.name}</p>
 								<p class="price">${product.price}</p>
 							</a>
@@ -58,8 +58,8 @@ window.onload=function(){
 						title=`<p class="list-info-title">${json[attr].name}</p>`
 						conStr += `
 						<li>
-							<a href="page.hmtl?pid=${product.id}&cname=${attr}">
-								<img src="../img2/${product.src}" alt="" />
+							<a href="http://127.0.0.1/program/js/page.html?pid=${product.id}&cname=${attr}">
+								<img src="../img2/${product.src[0]}" alt="" />
 								<p class="name">${product.name}</p>
 								<p class="price">${product.price}</p>
 							</a>

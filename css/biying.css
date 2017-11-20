@@ -263,6 +263,7 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 44px;
 	color:#FFFDEF;
 	font-weight: 100;
+	cursor:pointer;
 }
 #left{
 	left:225px;
