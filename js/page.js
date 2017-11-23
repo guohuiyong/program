@@ -142,6 +142,7 @@ window.onload = function(){
 							<img style="z-index: 1;" src="../img2/${pro.src[4]}"/>
 							<img style="z-index: 1;" src="../img2/${pro.src[5]}"/>
 						</div>`;
+						/*<span style="display:none" data-id=${pro.id} data-name=${pro.name} data-scr=${pro.src[0]} data-price=${pro.price}></span>*/
 					break;
 				}
 			}
@@ -153,4 +154,36 @@ window.onload = function(){
 			fun();
 		}
 	});
+	
+	//点击“添加到购物车”，将当前商品的pid=shop02和cname=classify001存入到cookie中
+	$(".btn2").click(function(){
+		var arr = [];
+		var flag = true;//若是真，就向arr中push商品；
+		var datajson = {
+			id : pid,//当前商品编号 shop02
+			cname : cname,//当前商品类classify001
+			count : 1
+		}
+		//再次点击时   商品会被覆盖    可以先将cookie中的数据取出来  存入到arr中
+		var oldCookie = getCookie("Prolist");
+		//如果cookie中没有数据 直接push
+		if(oldCookie.length != 0 ){
+			arr = oldCookie;
+			//再次点击商品时  判断这个商品在原cookie中是否存在  如果存在就将数量++
+			for(var i = 0 ; i < arr.length ; i ++ ){
+				if(datajson.id == arr[i].id && datajson.cname == arr[i].cname){
+					arr[i].count++;
+					flag = false;
+					break;
+				}
+			}
+		}
+		
+		if(flag){//如果为真，向arr中    push datajson数据
+			arr.push(datajson);
+		}
+		
+		//将数组存入到cookie中
+		setCookie("Prolist",JSON.stringify(arr));
+	})
 }
